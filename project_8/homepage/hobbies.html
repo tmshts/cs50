@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="work.html">Work Experience</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="traveling.html">Traveling</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <h2 class="page_title">Hobbies</h2>
+
+        <img class="hobbies_picture" src="self.jpg" alt="Foto can not be shown" id="data">
+
+        <script>
+        let interval = setInterval(image_show, 1000); //time inteval 1 sec
+
+        let start = 1;
+
+        function image_show()
+        {
+            let image;
+
+            if (start === 1)
+            {
+                image = "self.jpg";
+            }
+            else if (start === 2)
+            {
+                image = "start.jpg";
+            }
+            else if (start === 3)
+            {
+                image = "technologies.jpg";
+            }
+            else if (start === 4)
+            {
+                image = "deutsch.jpg";
+            }
+            else if (start === 5)
+            {
+                image = "english.png";
+            }
+            else if (start === 6)
+            {
+                image = "spanish.jpg";
+            }
+            else if (start === 7)
+            {
+                image = "trading.jpg";
+            }
+            else if (start === 8)
+            {
+                image = "traveling.jpg";
+            }
+            else if (start === 9)
+            {
+                image = "agreements.jpg";
+            }
+            else if (start === 10)
+            {
+                image = "analysis.jpg";
+            }
+            else if (start === 11)
+            {
+                image = "colorin.jpg";
+            }
+            else if (start === 12)
+            {
+                image = "alchemist.jpg";
+            }
+            else if (start === 13)
+            {
+                image = "friends.png";
+            }
+            else if (start === 14)
+            {
+                image = "hero.jpg";
+            }
+            else if (start === 15)
+            {
+                image = "running.jpg";
+            }
+            else if (start === 16)
+            {
+                image = "yoga.jpg";
+            }
+            else if (start === 17)
+            {
+                image = "meditation.jpg";
+            }
+            else if (start === 18)
+            {
+                image = "gym.jpg";
+            }
+            else //after reaching gym, it will be transformed to golf and start from the beginning
+            {
+                image = "golf.jpg";
+                start = 1;
+            }
+
+        document.getElementById("data").src=""+image; //changing image - depending on
+        start++; //counting
+        }
+        </script>
+
+        <ul>
+            <li>Self-development</li>
+            <li>Start-up scene</li>
+            <li>Technologies</li>
+            <li>Foreign languages
+                <ul>
+                    <li>Czech (native)</li>
+                    <li>Slovak</li>
+                    <li>German</li>
+                    <li>English</li>
+                    <li>Spanish</li>
+                </ul>
+            </li>
+            <li>Online trading</li>
+            <li>Traveling</li>
+            <li>Reading books
+                <ol>
+                    <li>The Four Agreements</li>
+                    <li>Technical Analysis of the Financial Markets</li>
+                    <li>Y colorín colorado este cuento aún no se ha acabado</li>
+                    <li>The Alchemist</li>
+                    <li>How to win friends and influence people</li>
+                    <li>Hero: The Secret</li>
+                    <li>Many others books</li>
+                </ol>
+                <form action="https://www.amazon.com/s" method="get" target="_blank">
+                <input name="k" type="text">
+                <input type="submit" value="Search on Amazon">
+                </form>
+            </li>
+            <li>Running</li>
+            <li>Yoga</li>
+            <li>Meditation</li>
+            <li>Gym</li>
+            <li>Golf</li>
+        </ul>
+
+    </body>
+</html>

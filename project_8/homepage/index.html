@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    <!--<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-haYMIENV0k0nMwBFk2F38EW1f9QOI4FETVUuk97bHJ78YTid9jKMwuHj4gBkpx2FXfiX1flTFqf8NxA1yApLXP1DIiP7_WWHlFaEHiU11tXu8ckUx5aP_gV9QMl1WVrrjWRoyLaDlmjjg2hiJiQ08j6194D9VMW8DpZss6kD9mP5m2MCR5LWdHWqAYFOEwR" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9pZGUtZjc5ZjgyMzIyNzkyNDhlNWFiOTVjN2FjZWNmNTE4MTYuaWRlLmNzNTAuaW8vdmZzLzIvZW52aXJvbm1lbnQvcHNldDgvaG9tZXBhZ2UvaW5kZXguaHRtbD9tZXRhZGF0YT10cnVl"/>-->
+    <script src="java.js"></script>
+    </head>
+    <body>
+        <div></div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="work.html">Work Experience</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="traveling.html">Traveling</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <h1 class="page_title">Tomas Hatas</h1>
+
+        <img class="index_picture" src="TomasHatas.jpg" alt="Picture of Tomas Hatas">
+        <p class="index_text">My name is Tomas Hatas and I come from the Czech Republic.
+        In terms of my <a class="index_link" href="education.html">education</a>,
+        I studied Bachelor and Master Degree at the University of Economics in Prague.
+        In the meantime, I did an exchange programm at the University of Economics in Vienna.
+        After graduation, I have gained some valueable
+        <a class="index_link" href="work.html">work experience</a>.
+        I have been working for international companies through various countries
+        such as PwC or FerratumBank.
+        I do love <a class="index_link" href="traveling.html">traveling</a> and hence I have been travelling since a couple of years.
+        My <a class="index_link" href="hobbies.html">hobbies</a> are very diverse.
+        Feel free to <a class="index_link" href="contact.html">contact</a> me.</p>
+        <p class="index_paragraph">Here you can change the size of the text about Tomas Hatas</p>
+
+        <select>
+        <option value="large">Large Text</option>
+        <option value="initial" selected>Medium Text</option>
+        <option value="small">Small Text</option>
+        </select>
+
+        <script>
+        document.querySelector("select").onchange = function() {
+        document.querySelector(".index_text").style.fontSize = this.value;
+        //this.value - this value gives me access to which option
+        //I have selected - large, initial, small
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+.navigation
+{
+    margin-top: 10px;
+    background-color: DimGray;
+    font-family: Serif;
+    text-align: center;
+    width: 100%;
+}
+.navigation a {
+    color: white;
+    padding: 2px;
+    font-size: 20px;
+    font-family: Lucida Console;
+}
+.navigation a:hover {
+    background-color: DarkSlateGray;
+}
+.page_title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Lucida Handwriting;
+    font-size: 40px;
+}
+
+.index_picture {
+    float:right;
+    width: 20%;
+    margin-left: 50px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+.index_text {
+    position: relative;
+    width: 75%;
+    background-color: LightGray;
+    margin-left: 20px;
+    border-radius: 8px;
+}
+.index_link {
+    color: black;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+table {
+    background-color: Gainsboro;
+    margin-left: 20px;
+    margin-right: 50px;
+    width: 97%;
+    border: 2px solid black;
+}
+th {
+    border: 3px solid black;
+    text-align: center;
+    height: 80px;
+}
+td {
+    border: 1px solid black;
+    height: 50px;
+    text-align: left;
+    padding: 5px;
+}
+ul {
+    list-style-type: square;
+}
+.traveling_gallery {
+    margin: 50px;
+    border: 1px solid black;
+    float: left;
+    width: 300px;
+}
+.traveling_gallery:hover {
+    border: 3px solid black;
+}
+.traveling_image {
+    width: 100%;
+    height: auto;
+}
+.traveling_margin {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold
+}
+.contact_paragraph {
+    margin-left: 20px;
+}
+.contact_logo {
+    margin-left: 20px;
+}
+.fa {
+    width: 50px;
+}
+.fa:hover {
+    color: black;
+}
+.list-group {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30%;
+    font-family: Georgia;
+}
+h5 {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: -15px;
+
+}
+.index_paragraph {
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-style: oblique;
+}
+select {
+    margin-left: 20px;
+}
+.hobbies_picture {
+    float: right;
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
